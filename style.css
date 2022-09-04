@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+}
+
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    box-shadow: 0 0 0.5rem rgb(83 78 76 / 50%); 
+    background-image: url(img/Kids.png) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+nav {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    margin-left: 20px;
+    text-shadow: 0 0 3px gray;
+    }
+
+.bar-btn {
+    font-size: 40px;
+    color: red;
+    text-shadow: 0 0 3px black;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.nav-menu {
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    top: 100px;
+    background-color: #9D7E6E; 
+    text-align: center;
+    transition: all .5s;
+}
+
+.nav-menu li {
+display: none;
+line-height: 30px;
+margin: 70px 0;
+transition: all .5s;
+}
+
+.nav-menu li a {
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.nav-menu li a.active, .nav-menu li a:hover {
+    color: lightpink;
+    transition: .3s;
+}
+
+#check {
+    display: none;
+}
+
+#check:checked ~ .nav-menu {
+    height: 100vh;
+}
+
+#check:checked ~ .nav-menu li {
+    display: block;
+}
+
+.texto-en-web {
+    padding: 0 30px;
+    margin-top: 150px;
+    text-align: center;
+      color: aliceblue;
+}
+
+.texto-en-web h1 {
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.texto-en-web span {
+    color: crimson;
+    text-shadow: 0 0 2px black;
+        
+}
+
+.texto-en-web h2 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.boton1 {
+    margin-right: 2rem;
+    padding: 15px 30px;
+    background-color: crimson;
+    color: white;
+    border-radius: 6.5px;
+    overflow: none;
+}
+
+.boton1:hover {
+    background-color: white;
+    color: crimson;
+    transition: .5s;
+}
+
+.boton2 {
+    margin-right: 2rem;
+    padding: 15px 30px;
+    background-color: white;
+    color: crimson;
+    border-radius: 6.5px;
+    overflow: hidden;
+}
+
+.boton2:hover {
+    background-color: crimson;
+    color: white;
+    transition: .5s;
+}
+
+@media screen and (min-width: 860px){
+    .logo {
+        margin-left: 50px;
+    }    
+
+    nav{
+        height: 100px;
+    }
+
+    .bar-btn{
+        display:none;
+    }
+
+    .nav-menu {
+        position: relative;
+        height: 100px;
+        top: 0;
+        background: none;
+        transition: none;
+        text-align: right;
+        margin-right: 40px;
+    }
+
+    .nav-menu li{
+        display: inline-block;
+        line-height: 100px;
+        margin: 0 1rem;
+        transition: none;
+    }
+    
+    .nav-menu li a{
+     font-size: 17px; 
+     text-shadow: 0 0 3px black;  
+    }
+
+    .texto-en-web h1 {
+        font-size: 44px;
+        margin-bottom: 70px;
+        text-shadow: 0 0 4px black;
+    }
+
+    .texto-en-web h2 {
+        font-size: 55px;
+        text-shadow: 0 0 4px black;
+    }
+}
+
+@media screen and (max-width: 440px) {
+
+.boton1 {
+    display: none;
+}
+
+.boton2 {
+    display: none;
+}
+    
+}
